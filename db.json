@@ -1,0 +1,33 @@
+{
+  "employees": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "position": "Developer",
+      "salary": 60000,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "position": "Manager",
+      "salary": 80000
+    },
+    {
+      "id": "b644",
+      "name": "sklncklnkndklvndkvnlkn",
+      "email": "sargsyan.geghamm@gmail.com",
+      "position": "lkdsnvklsdenvkldsnvklnsdklvndsklvndsklvndslkvn",
+      "salary": 55550
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@test.com",
+      "password": "123456",
+      "name": "Admin"
+    }
+  ]
+}
