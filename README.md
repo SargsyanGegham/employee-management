@@ -3,7 +3,6 @@
 A modern **Employee Management Dashboard** built with **Next.js 16 (App Router)**, **Redux Toolkit**, **Material-UI**, and **json-server**.
 The application supports full CRUD operations, authentication, protected routes, and a responsive Material-UI interface.
 
-🔗 **Live Demo:** Coming Soon
 📦 **GitHub Repository:** [SargsyanGegham/employee-management](https://github.com/SargsyanGegham/employee-management)
 
 ---
