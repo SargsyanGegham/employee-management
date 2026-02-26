@@ -92,7 +92,6 @@ employee-management/
 │   └── components/    # Reusable UI components
 ├── public/            # Static assets
 ├── db.json            # Mock database for json-server
-├── middleware.ts      # Next.js middleware for route protection
 └── package.json
 ```
 
