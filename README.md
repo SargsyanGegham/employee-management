@@ -113,7 +113,7 @@ employee-management/
 
 ## ⚡ Technologies Used
 
-* **Next.js 16** – App Router, layouts, middleware
+* **Next.js 16** – App Router, layouts
 * **Material-UI (MUI)** – Responsive UI and DataGrid
 * **Redux Toolkit** – State management
 * **json-server** – Mock API for development
