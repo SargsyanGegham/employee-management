@@ -1,0 +1,57 @@
+{
+  "emp-new-component": {
+    "prefix": "empc",
+    "body": "I'm working on the employee-management project.\n\nI need to create a new ${1:ComponentName} component.\n\nRequirements:\n- Purpose: ${2:What does it do}\n- Props: ${3:List props}\n- Reusable: ${4:Yes/No}\n\n✓ Use TypeScript (no any types)\n✓ Write JSDoc comments\n✓ Write Jest tests\n✓ Add to Storybook (if reusable)\n✓ Use existing utils (no new dependencies)\n\nReference: COMPONENT_CREATION.md",
+    "description": "NEW COMPONENT - Create new component with tests & Storybook"
+  },
+  "emp-bug": {
+    "prefix": "empb",
+    "body": "I'm working on the employee-management project.\n\nI found a bug: ${1:Describe the problem}\n\nAffected file: ${2:src/features/...}\nExpected behavior: ${3:What should happen}\nActual behavior: ${4:What's happening}\n\nFollow CODE.md code standards and CLAUDE.md patterns.\n\nHelp me fix it.",
+    "description": "BUG FIX - Fix a bug following project patterns"
+  },
+  "emp-feature": {
+    "prefix": "empf",
+    "body": "I'm working on the employee-management project.\n\nI need to add ${1:Feature name} to ${2:Component/Section}.\n\nRequirements:\n- ${3:Requirement 1}\n- ${4:Requirement 2}\n- ${5:Requirement 3}\n\nFollow patterns:\n✓ Redux thunks for API calls\n✓ Zod validation\n✓ Material-UI components\n✓ TypeScript (no any)\n✓ JSDoc comments\n✓ Jest tests\n✓ Use existing utils\n\nReference: COMPONENT_CREATION.md",
+    "description": "NEW FEATURE - Add new feature following patterns"
+  },
+  "emp-test": {
+    "prefix": "empt",
+    "body": "I'm working on the employee-management project.\n\nI need to write tests for: ${1:Component/Function}\n\nWhat it does: ${2:Brief description}\n\nTest cases needed:\n- ${3:Test case 1}\n- ${4:Test case 2}\n- ${5:Test case 3}\n\nUse: Jest for unit tests, Playwright for E2E\n\nReference: COMPONENT_CREATION.md → Testing Template",
+    "description": "TESTS - Write Jest or Playwright tests"
+  },
+  "emp-story": {
+    "prefix": "emps",
+    "body": "I'm working on the employee-management project.\n\nI need to create Storybook stories for: ${1:ComponentName}\n\nComponent does: ${2:What it is}\n\nStory variants needed:\n- ${3:Default state}\n- ${4:Error state}\n- ${5:Loading state}\n- ${6:Interactive example}\n\nReference: COMPONENT_CREATION.md → Storybook Story Template\n\nShow multiple stories with different prop combinations.",
+    "description": "STORYBOOK - Create component stories"
+  },
+  "emp-review": {
+    "prefix": "empr",
+    "body": "I'm working on the employee-management project.\n\nCan you review this code?\n\n${1:Paste your code here}\n\nCheck for:\n✓ TypeScript type safety (no any types)\n✓ Redux best practices\n✓ Material-UI patterns\n✓ Component structure\n✓ JSDoc documentation\n✓ Test coverage\n✓ Common mistakes\n\nSuggest improvements.",
+    "description": "CODE REVIEW - Review code for quality"
+  },
+  "emp-redux": {
+    "prefix": "emprd",
+    "body": "I'm working on the employee-management project.\n\nI have a Redux state issue.\n\nProblem: ${1:Describe what's wrong}\n\nWhat I see in Redux DevTools: ${2:State output}\nWhat I expected: ${3:What should happen}\nWhat's happening: ${4:What actually happens}\n\nCode snippet:\n${5:Paste relevant code}\n\nUse debugging tips from CODE.md and Redux patterns from CLAUDE.md.\n\nHelp me debug this.",
+    "description": "REDUX DEBUG - Debug Redux state issue"
+  },
+  "emp-arch": {
+    "prefix": "empa",
+    "body": "I'm working on the employee-management project.\n\nCan you explain how ${1:Feature/Component}} works?\n\nShow me:\n1. Data flow (where data comes from)\n2. State management (how Redux is involved)\n3. Component hierarchy (which components involved)\n4. API calls (which endpoints used)\n\nReference: CLAUDE.md for architecture context",
+    "description": "ARCHITECTURE - Explain how feature works"
+  },
+  "emp-perf": {
+    "prefix": "empp",
+    "body": "I'm working on the employee-management project.\n\nI'm experiencing a performance issue: ${1:Describe problem}\n\nDetails:\n- Where it happens: ${2:Component/Page}\n- When it happens: ${3:Condition}\n- How it affects: ${4:Impact}\n- Attempted fixes: ${5:What you tried}\n\nUse performance tips from CODE.md.\n\nHelp me optimize this.",
+    "description": "PERFORMANCE - Optimize slow code"
+  },
+  "emp-refactor": {
+    "prefix": "emprf",
+    "body": "I'm working on the employee-management project.\n\nI want to refactor: ${1:Component/Code}\n\nCurrent issue: ${2:What's wrong with it}\nGoal: ${3:What should improve}\nConstraints: ${4:Any limitations}\n\nFollow patterns:\n- CODE.md → Code Standards\n- CLAUDE.md → Architecture\n\nSuggest a refactoring approach.",
+    "description": "REFACTOR - Refactor code architecture"
+  },
+  "emp-commit": {
+    "prefix": "empc",
+    "body": "I just ${1:did something} in the employee-management project.\n\nWhat I changed: ${2:Brief description}\n\nWrite a commit message following:\n- Type: ${3:feat/fix/refactor/test/docs/chore}\n- Scope: ${4:employees/auth/etc}\n- Format from: COMMIT_PROMPTS.md\n\nInclude body explaining why (not what).",
+    "description": "COMMIT MSG - Generate commit message"
+  }
+}

@@ -1,9 +1,14 @@
 // Mark this component as a Client Component for Next.js
-'use client';
+"use client";
 
-import { Dialog, DialogTitle, DialogContent, DialogContentText } from '@mui/material';
-import EmployeeForm from './EmployeeForm';
-import { EmployeeFormValues } from '../types/employee.types';
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+} from "@mui/material";
+import EmployeeForm from "./EmployeeForm";
+import { EmployeeFormValues } from "../types/employee.types";
 
 /**
  * Props interface for the EmployeeDialog component
@@ -40,12 +45,12 @@ export default function EmployeeDialog({
   return (
     <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
       <DialogTitle>{title}</DialogTitle>
-      
+
       <DialogContent>
         <DialogContentText sx={{ mb: 2 }}>
           Please fill in the employee details below.
         </DialogContentText>
-        
+
         <EmployeeForm
           initialValues={initialValues}
           onSubmit={onSubmit}

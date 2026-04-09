@@ -1,13 +1,13 @@
 // Mark this component as a Client Component for Next.js
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { Box, Typography, Paper } from '@mui/material'
-import { authService } from '@/features/auth/services/authService'
-import { useAuth } from '@/providers/AuthProvider'
-import { AxiosError } from 'axios'
-import Input from '@/components/Input'
-import Button from '@/components/Button'
+import { useState } from "react";
+import { Box, Typography, Paper } from "@mui/material";
+import { authService } from "@/features/auth/services/authService";
+import { useAuth } from "@/providers/AuthProvider";
+import { AxiosError } from "axios";
+import Input from "@/components/Input";
+import Button from "@/components/Button";
 
 /**
  * Login form component that provides authentication form
@@ -15,11 +15,12 @@ import Button from '@/components/Button'
  * @returns {JSX.Element} Login form with email, password fields and error handling
  */
 export default function LoginForm() {
-  const { login } = useAuth()
+  const { login } = useAuth();
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState<string | null>(null)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [error, setError] = useState<string | null>(null);
 
   /**
    * Handles form submission for user login
@@ -28,22 +29,23 @@ export default function LoginForm() {
    * @param {React.SubmitEvent} e - Form submission event
    */
   const handleSubmit = async (e: React.SubmitEvent) => {
-    e.preventDefault()
-    setError(null)
-    
+    e.preventDefault();
+    setError(null);
+
     try {
-      const user = await authService.login({ email, password })
-      login(user)
+      const user = await authService.login({ email, password });
+
+      login(user);
     } catch (error) {
       if (error instanceof AxiosError) {
         setError(error.response?.data?.message || error.message);
       } else if (error instanceof Error) {
         setError(error.message);
       } else {
-        setError('An unexpected error occurred');
+        setError("An unexpected error occurred");
       }
-  }
-  }
+    }
+  };
 
   return (
     <Box
@@ -61,6 +63,7 @@ export default function LoginForm() {
           <Input
             fullWidth
             label="Email"
+            name="email"
             margin="normal"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -69,6 +72,7 @@ export default function LoginForm() {
           <Input
             fullWidth
             type="password"
+            name="password"
             label="Password"
             margin="normal"
             value={password}
@@ -81,16 +85,11 @@ export default function LoginForm() {
             </Typography>
           )}
 
-          <Button
-            fullWidth
-            variant="contained"
-            type="submit"
-            sx={{ mt: 2 }}
-          >
+          <Button fullWidth variant="contained" type="submit" sx={{ mt: 2 }}>
             Login
           </Button>
         </form>
       </Paper>
     </Box>
-  )
+  );
 }

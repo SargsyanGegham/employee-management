@@ -1,20 +1,33 @@
 // Mark this component as a Client Component for Next.js
-'use client';
+"use client";
 
-import { useState, useEffect, useMemo } from 'react';
-import { DataGrid, GridColDef, GridActionsCellItem } from '@mui/x-data-grid';
-import { Box, Snackbar, Alert, TextField, InputAdornment, useMediaQuery, useTheme } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
-import { useAppDispatch, useAppSelector } from '@/hooks/useRedux';
-import { clearError } from '@/redux/slices/employeeSlice';
-import { addEmployee, deleteEmployee, fetchEmployees, updateEmployee } from '@/redux/thunks/employeeThunks';
-import EmployeeDialog from './EmployeeDialog';
-import { Employee, EmployeeFormValues } from '../types/employee.types';
-import DeleteDialog from './DeleteDialog';
-import Button from '@/components/Button';
-import { useDebounce } from '@/hooks/useDebounce';
+import { useState, useEffect, useMemo } from "react";
+import { DataGrid, GridColDef, GridActionsCellItem } from "@mui/x-data-grid";
+import {
+  Box,
+  Snackbar,
+  Alert,
+  TextField,
+  InputAdornment,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { useAppDispatch, useAppSelector } from "@/hooks/useRedux";
+import { clearError } from "@/redux/slices/employeeSlice";
+import {
+  addEmployee,
+  deleteEmployee,
+  fetchEmployees,
+  updateEmployee,
+} from "@/redux/thunks/employeeThunks";
+import EmployeeDialog from "./EmployeeDialog";
+import { Employee, EmployeeFormValues } from "../types/employee.types";
+import DeleteDialog from "./DeleteDialog";
+import Button from "@/components/Button";
+import { useDebounce } from "@/hooks/useDebounce";
 
 /**
  * Employee table component that displays employees in a data grid
@@ -25,19 +38,24 @@ import { useDebounce } from '@/hooks/useDebounce';
  */
 export default function EmployeeTable() {
   const dispatch = useAppDispatch();
-  const { list: employees, loading, error } = useAppSelector((state) => state.employees);
-  
+
+  const {
+    list: employees,
+    loading,
+    error,
+  } = useAppSelector((state) => state.employees);
+
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
   const [dialogOpen, setDialogOpen] = useState(false);
   const [editingEmployee, setEditingEmployee] = useState<Employee | null>(null);
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [employeeToDelete, setEmployeeToDelete] = useState<number | null>(null);
   const [formLoading, setFormLoading] = useState(false);
-  
-  const [searchInput, setSearchInput] = useState('');
+
+  const [searchInput, setSearchInput] = useState("");
   const debouncedSearch = useDebounce(searchInput, 300);
 
   // Fetch employees on component mount
@@ -52,12 +70,13 @@ export default function EmployeeTable() {
    */
   const filteredEmployees = useMemo(() => {
     if (!debouncedSearch.trim()) return employees;
-    
+
     const query = debouncedSearch.toLowerCase().trim();
-    return employees.filter((employee) => 
-      employee.name.toLowerCase().includes(query) ||
-      employee.email.toLowerCase().includes(query) ||
-      employee.position.toLowerCase().includes(query)
+    return employees.filter(
+      (employee) =>
+        employee.name.toLowerCase().includes(query) ||
+        employee.email.toLowerCase().includes(query) ||
+        employee.position.toLowerCase().includes(query)
     );
   }, [employees, debouncedSearch]);
 
@@ -96,7 +115,9 @@ export default function EmployeeTable() {
     setFormLoading(true);
     try {
       if (editingEmployee) {
-        await dispatch(updateEmployee({ id: editingEmployee.id, data: values })).unwrap();
+        await dispatch(
+          updateEmployee({ id: editingEmployee.id, data: values })
+        ).unwrap();
       } else {
         await dispatch(addEmployee(values)).unwrap();
       }
@@ -131,68 +152,68 @@ export default function EmployeeTable() {
    * Clears search input
    */
   const handleClearSearch = () => {
-    setSearchInput('');
+    setSearchInput("");
   };
 
   // Responsive column definitions based on screen size
   const columns: GridColDef[] = useMemo(() => {
     // Base columns that always show
     const baseColumns: GridColDef[] = [
-      { 
-        field: 'id', 
-        headerName: 'ID', 
+      {
+        field: "id",
+        headerName: "ID",
         width: isMobile ? 60 : 90,
-        flex: isMobile ? 0.5 : undefined
+        flex: isMobile ? 0.5 : undefined,
       },
-      { 
-        field: 'name', 
-        headerName: 'Name', 
-        width: isMobile ? 120 : (isTablet ? 150 : 200),
-        flex: isMobile ? 1 : undefined
+      {
+        field: "name",
+        headerName: "Name",
+        width: isMobile ? 120 : isTablet ? 150 : 200,
+        flex: isMobile ? 1 : undefined,
       },
     ];
 
     // Add email for tablet and desktop
     if (!isMobile) {
-      baseColumns.push({ 
-        field: 'email', 
-        headerName: 'Email', 
+      baseColumns.push({
+        field: "email",
+        headerName: "Email",
         width: isTablet ? 150 : 200,
-        flex: isTablet ? 1 : undefined
+        flex: isTablet ? 1 : undefined,
       });
     }
 
     // Add position for tablet and desktop
     if (!isMobile) {
-      baseColumns.push({ 
-        field: 'position', 
-        headerName: 'Position', 
+      baseColumns.push({
+        field: "position",
+        headerName: "Position",
         width: isTablet ? 150 : 200,
-        flex: isTablet ? 1 : undefined
+        flex: isTablet ? 1 : undefined,
       });
     }
 
     // Add salary for desktop only
     if (!isMobile && !isTablet) {
-      baseColumns.push({ 
-        field: 'salary', 
-        headerName: 'Salary', 
-        width: 130, 
-        type: 'number' 
+      baseColumns.push({
+        field: "salary",
+        headerName: "Salary",
+        width: 130,
+        type: "number",
       });
     }
 
     // Actions column always shows
     baseColumns.push({
-      field: 'actions',
-      type: 'actions',
-      headerName: 'Actions',
+      field: "actions",
+      type: "actions",
+      headerName: "Actions",
       width: isMobile ? 80 : 100,
       flex: isMobile ? 0.5 : undefined,
       getActions: (params) => [
         <GridActionsCellItem
           icon={<EditIcon />}
-          key='edit'
+          key="edit"
           label="Edit"
           onClick={() => handleEdit(params.row as Employee)}
         />,
@@ -209,25 +230,34 @@ export default function EmployeeTable() {
   }, [isMobile, isTablet]);
 
   return (
-    <Box sx={{ height: isMobile ? 400 : 500, width: '100%' }}>
-      <Box sx={{ 
-        display: 'flex', 
-        flexDirection: isMobile ? 'column' : 'row',
-        justifyContent: 'space-between', 
-        alignItems: isMobile ? 'stretch' : 'center', 
-        gap: 2,
-        mb: 2 
-      }}>
-        <Button variant="contained" onClick={handleAdd} fullWidth={isMobile}>
+    <Box sx={{ height: isMobile ? 400 : 500, width: "100%" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          justifyContent: "space-between",
+          alignItems: isMobile ? "stretch" : "center",
+          gap: 2,
+          mb: 2,
+        }}
+      >
+        <Button
+          name="add-employ"
+          variant="contained"
+          onClick={handleAdd}
+          fullWidth={isMobile}
+        >
           Add Employee
         </Button>
-        
+
         <TextField
-          placeholder={isMobile ? "Search..." : "Search by name, email, or position..."}
+          placeholder={
+            isMobile ? "Search..." : "Search by name, email, or position..."
+          }
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           size="small"
-          sx={{ width: isMobile ? '100%' : 300 }}
+          sx={{ width: isMobile ? "100%" : 300 }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -239,23 +269,24 @@ export default function EmployeeTable() {
                 <Box
                   component="span"
                   onClick={handleClearSearch}
-                  sx={{ 
-                    cursor: 'pointer',
-                    color: 'text.secondary',
-                    '&:hover': { color: 'text.primary' }
+                  sx={{
+                    cursor: "pointer",
+                    color: "text.secondary",
+                    "&:hover": { color: "text.primary" },
                   }}
                 >
                   ✕
                 </Box>
               </InputAdornment>
-            ) : null
+            ) : null,
           }}
         />
       </Box>
 
       {debouncedSearch && (
-        <Box sx={{ mb: 1, color: 'text.secondary' }}>
-          Found {filteredEmployees.length} employee{filteredEmployees.length !== 1 ? 's' : ''}
+        <Box sx={{ mb: 1, color: "text.secondary" }}>
+          Found {filteredEmployees.length} employee
+          {filteredEmployees.length !== 1 ? "s" : ""}
         </Box>
       )}
 
@@ -267,7 +298,7 @@ export default function EmployeeTable() {
         initialState={{
           pagination: { paginationModel: { pageSize: isMobile ? 5 : 10 } },
         }}
-        density={isMobile ? 'compact' : 'standard'}
+        density={isMobile ? "compact" : "standard"}
       />
 
       <EmployeeDialog
@@ -275,7 +306,7 @@ export default function EmployeeTable() {
         onClose={() => setDialogOpen(false)}
         onSubmit={handleFormSubmit}
         initialValues={editingEmployee || undefined}
-        title={editingEmployee ? 'Edit Employee' : 'Add Employee'}
+        title={editingEmployee ? "Edit Employee" : "Add Employee"}
         isLoading={formLoading}
       />
 
@@ -290,7 +321,7 @@ export default function EmployeeTable() {
         open={!!error}
         autoHideDuration={6000}
         onClose={() => dispatch(clearError())}
-        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <Alert severity="error" onClose={() => dispatch(clearError())}>
           {error}

@@ -20,7 +20,7 @@ export const authService = {
 
     const user = response.data.find(u => u.email === payload.email && u.password === payload.password)
 
-    if (!user) {
+    if (!user) { 
       throw new Error('Invalid credentials')
     }
 

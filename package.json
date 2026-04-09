@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"json-server --watch db.json --port 4000\"",
+    "dev": "concurrently \"next dev\" \"json-server --watch db.json --port 4000\"  \"storybook dev -p 6006\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "test:jest": "jest",
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -18,6 +21,7 @@
     "@mui/material-nextjs": "^7.3.8",
     "@mui/x-data-grid": "^8.27.3",
     "@reduxjs/toolkit": "^2.11.2",
+    "@storybook/react-vite": "^10.2.19",
     "axios": "^1.13.5",
     "next": "16.1.6",
     "react": "19.2.3",
@@ -27,15 +31,38 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "prettier": "^3.1.1",
+    "@chromatic-com/storybook": "^5.0.1",
+    "@playwright/test": "^1.58.2",
+    "@storybook/addon-a11y": "^10.2.17",
+    "@storybook/addon-docs": "^10.2.17",
+    "@storybook/addon-onboarding": "^10.2.17",
+    "@storybook/addon-vitest": "^10.2.17",
+    "@storybook/nextjs-vite": "^10.2.17",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/browser-playwright": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.0",
     "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "eslint-plugin-storybook": "^10.2.17",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
     "json-server": "^1.0.0-beta.9",
+    "playwright": "^1.58.2",
+    "storybook": "^10.2.17",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-jest": "^29.4.6",
+    "typescript": "^5",
+    "vite": "^7.3.1",
+    "vitest": "^4.1.0"
   }
 }

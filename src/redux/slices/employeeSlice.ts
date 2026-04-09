@@ -1,6 +1,11 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Employee } from '@/features/employees/types';
-import { addEmployee, deleteEmployee, fetchEmployees, updateEmployee } from '../thunks/employeeThunks';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Employee } from "@/features/employees/types";
+import {
+  addEmployee,
+  deleteEmployee,
+  fetchEmployees,
+  updateEmployee,
+} from "../thunks/employeeThunks";
 
 /**
  * Employee state interface defining the structure of employees in Redux store
@@ -26,7 +31,7 @@ const initialState: EmployeeState = {
  * Handles synchronous actions and async thunk states for CRUD operations
  */
 const employeeSlice = createSlice({
-  name: 'employees',
+  name: "employees",
   initialState,
   reducers: {
     // Clear any error messages from the state
@@ -41,29 +46,70 @@ const employeeSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchEmployees.fulfilled, (state, action: PayloadAction<Employee[]>) => {
-        state.loading = false;
-        state.list = action.payload;
-      })
+      .addCase(
+        fetchEmployees.fulfilled,
+        (state, action: PayloadAction<Employee[]>) => {
+          state.loading = false;
+          state.list = action.payload;
+        }
+      )
       .addCase(fetchEmployees.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload as string;
       })
-      
-      // Handle add employee success
-      .addCase(addEmployee.fulfilled, (state, action: PayloadAction<Employee>) => {
-        state.list.push(action.payload);
+
+      // Handle add employee thunk states
+      .addCase(addEmployee.pending, (state) => {
+        state.loading = true;
+        state.error = null;
       })
-      
-      // Handle update employee success
-      .addCase(updateEmployee.fulfilled, (state, action: PayloadAction<Employee>) => {
-        const index = state.list.findIndex(emp => emp.id === action.payload.id);
-        if (index !== -1) state.list[index] = action.payload;
+      .addCase(
+        addEmployee.fulfilled,
+        (state, action: PayloadAction<Employee>) => {
+          state.loading = false;
+          state.list.push(action.payload);
+        }
+      )
+      .addCase(addEmployee.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload as string;
       })
-      
-      // Handle delete employee success
-      .addCase(deleteEmployee.fulfilled, (state, action: PayloadAction<number>) => {
-        state.list = state.list.filter(emp => emp.id !== action.payload);
+
+      // Handle update employee thunk states
+      .addCase(updateEmployee.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(
+        updateEmployee.fulfilled,
+        (state, action: PayloadAction<Employee>) => {
+          state.loading = false;
+          const index = state.list.findIndex(
+            (emp) => emp.id === action.payload.id
+          );
+          if (index !== -1) state.list[index] = action.payload;
+        }
+      )
+      .addCase(updateEmployee.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload as string;
+      })
+
+      // Handle delete employee thunk states
+      .addCase(deleteEmployee.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(
+        deleteEmployee.fulfilled,
+        (state, action: PayloadAction<number>) => {
+          state.loading = false;
+          state.list = state.list.filter((emp) => emp.id !== action.payload);
+        }
+      )
+      .addCase(deleteEmployee.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload as string;
       });
   },
 });
