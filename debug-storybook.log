@@ -1,0 +1,362 @@
+[19:20:10.976] [INFO] [36mInitializing Storybook[39m
+[19:20:11.462] [DEBUG] Getting package.json info for C:/Users/sargs/Videos/employee-management/package.json...
+[19:20:11.463] [DEBUG] Getting CLI versions from NPM for storybook...
+[19:20:11.463] [DEBUG] Executing command: npm info storybook version
+[19:20:12.421] [INFO] Adding Storybook version 10.2.17 to your project
+[19:20:12.424] [DEBUG] Project type detected: nextjs
+[19:20:12.424] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:12.438] [INFO] Framework detected: nextjs-vite
+[19:20:12.439] [DEBUG] Getting installed version for vitest...
+[19:20:12.440] [DEBUG] Executing command: npm ls --json --depth=99 2>NUL
+[19:20:13.360] [DEBUG] Executing command: npm ls --json --depth=0 2>NUL
+[19:20:14.019] [DEBUG] Error finding installations for vitest: ExecaError: Command failed with exit code 1: npm.cmd ls --json "--depth=0" "2>NUL"
+
+npm error code EINVALIDTAGNAME
+npm error Invalid tag name "2>NUL" of package "2>NUL": Tags may not have any characters that encodeURIComponent encodes.
+npm error A complete log of this run can be found in: C:\Users\sargs\AppData\Local\npm-cache\_logs\2026-03-12T15_20_13_480Z-debug-0.log
+
+{
+  "error": {
+    "code": "EINVALIDTAGNAME",
+    "summary": "Invalid tag name \"2>NUL\" of package \"2>NUL\": Tags may not have any characters that encodeURIComponent encodes.",
+    "detail": ""
+  }
+}
+[19:20:14.019] [DEBUG] No installations found for vitest
+[19:20:14.019] [DEBUG] Getting installed version for msw...
+[19:20:14.019] [DEBUG] Executing command: npm ls --json --depth=99 2>NUL
+[19:20:14.662] [DEBUG] Executing command: npm ls --json --depth=0 2>NUL
+[19:20:15.322] [DEBUG] Error finding installations for msw: ExecaError: Command failed with exit code 1: npm.cmd ls --json "--depth=0" "2>NUL"
+
+npm error code EINVALIDTAGNAME
+npm error Invalid tag name "2>NUL" of package "2>NUL": Tags may not have any characters that encodeURIComponent encodes.
+npm error A complete log of this run can be found in: C:\Users\sargs\AppData\Local\npm-cache\_logs\2026-03-12T15_20_14_778Z-debug-0.log
+
+{
+  "error": {
+    "code": "EINVALIDTAGNAME",
+    "summary": "Invalid tag name \"2>NUL\" of package \"2>NUL\": Tags may not have any characters that encodeURIComponent encodes.",
+    "detail": ""
+  }
+}
+[19:20:15.322] [DEBUG] No installations found for msw
+[19:20:36.656] [PROMPT] New to Storybook? {"choice":true}
+[19:20:36.656] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
+[19:20:37.340] [INFO] base-generator-task-start: Generating Storybook configuration
+[19:20:37.340] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:37.340] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:37.340] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:37.341] [INFO] base-generator-task: - Configuring ESLint plugin
+[19:20:37.342] [DEBUG] Detected flat config at C:\Users\sargs\Videos\employee-management\eslint.config.mjs
+[19:20:37.377] [DEBUG] Using cached version for storybook...
+[19:20:37.377] [DEBUG] Getting CLI versions from NPM for @storybook/nextjs-vite...
+[19:20:37.377] [DEBUG] Executing command: npm info @storybook/nextjs-vite version
+[19:20:37.399] [DEBUG] Getting CLI versions from NPM for @chromatic-com/storybook...
+[19:20:37.399] [DEBUG] Executing command: npm info @chromatic-com/storybook version
+[19:20:37.421] [DEBUG] Getting CLI versions from NPM for @storybook/addon-vitest...
+[19:20:37.421] [DEBUG] Executing command: npm info @storybook/addon-vitest version
+[19:20:37.443] [DEBUG] Getting CLI versions from NPM for @storybook/addon-a11y...
+[19:20:37.443] [DEBUG] Executing command: npm info @storybook/addon-a11y version
+[19:20:37.469] [DEBUG] Getting CLI versions from NPM for @storybook/addon-docs...
+[19:20:37.469] [DEBUG] Executing command: npm info @storybook/addon-docs version
+[19:20:37.495] [DEBUG] Getting CLI versions from NPM for @storybook/addon-onboarding...
+[19:20:37.495] [DEBUG] Executing command: npm info @storybook/addon-onboarding version
+[19:20:37.522] [DEBUG] Getting CLI versions from NPM for vite...
+[19:20:37.522] [DEBUG] Executing command: npm info vite version
+[19:20:37.551] [DEBUG] Getting CLI versions from NPM for eslint-plugin-storybook...
+[19:20:37.551] [DEBUG] Executing command: npm info eslint-plugin-storybook version
+[19:20:41.918] [INFO] base-generator-task: - Configuring main.ts
+[19:20:41.921] [INFO] base-generator-task: - Configuring preview.ts
+[19:20:41.923] [INFO] base-generator-task: - Adding Storybook command to package.json
+[19:20:41.924] [DEBUG] Getting package.json info for C:/Users/sargs/Videos/employee-management/package.json...
+[19:20:41.924] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:41.924] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:41.926] [INFO] base-generator-task: - Copying framework templates
+[19:20:41.967] [DEBUG] Executing command: npm config get registry -ws=false -iwr
+[19:20:43.115] [INFO] base-generator-task-success: Storybook configuration generated
+[19:20:43.117] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:43.117] [DEBUG] Using cached installed version for vitest...
+[19:20:43.117] [DEBUG] Getting installed version for @vitest/coverage-v8...
+[19:20:43.117] [DEBUG] Executing command: npm ls --json --depth=99 2>NUL
+[19:20:43.875] [DEBUG] Executing command: npm ls --json --depth=0 2>NUL
+[19:20:44.540] [DEBUG] Error finding installations for @vitest/coverage-v8: ExecaError: Command failed with exit code 1: npm.cmd ls --json "--depth=0" "2>NUL"
+
+npm error code EINVALIDTAGNAME
+npm error Invalid tag name "2>NUL" of package "2>NUL": Tags may not have any characters that encodeURIComponent encodes.
+npm error A complete log of this run can be found in: C:\Users\sargs\AppData\Local\npm-cache\_logs\2026-03-12T15_20_43_996Z-debug-0.log
+
+{
+  "error": {
+    "code": "EINVALIDTAGNAME",
+    "summary": "Invalid tag name \"2>NUL\" of package \"2>NUL\": Tags may not have any characters that encodeURIComponent encodes.",
+    "detail": ""
+  }
+}
+[19:20:44.540] [DEBUG] No installations found for @vitest/coverage-v8
+[19:20:44.540] [DEBUG] Getting installed version for @vitest/coverage-istanbul...
+[19:20:44.540] [DEBUG] Executing command: npm ls --json --depth=99 2>NUL
+[19:20:45.193] [DEBUG] Executing command: npm ls --json --depth=0 2>NUL
+[19:20:45.858] [DEBUG] Error finding installations for @vitest/coverage-istanbul: ExecaError: Command failed with exit code 1: npm.cmd ls --json "--depth=0" "2>NUL"
+
+npm error code EINVALIDTAGNAME
+npm error Invalid tag name "2>NUL" of package "2>NUL": Tags may not have any characters that encodeURIComponent encodes.
+npm error A complete log of this run can be found in: C:\Users\sargs\AppData\Local\npm-cache\_logs\2026-03-12T15_20_45_314Z-debug-0.log
+
+{
+  "error": {
+    "code": "EINVALIDTAGNAME",
+    "summary": "Invalid tag name \"2>NUL\" of package \"2>NUL\": Tags may not have any characters that encodeURIComponent encodes.",
+    "detail": ""
+  }
+}
+[19:20:45.858] [DEBUG] No installations found for @vitest/coverage-istanbul
+[19:20:45.859] [INFO] adding-dependencies-task-start: Adding dependencies to package.json
+[19:20:45.860] [INFO] adding-dependencies-task: Adding devDependencies:
+- storybook@^10.2.17
+- @storybook/nextjs-vite@^10.2.17
+- @chromatic-com/storybook@^5.0.1
+- @storybook/addon-vitest@^10.2.17
+- @storybook/addon-a11y@^10.2.17
+- @storybook/addon-docs@^10.2.17
+- @storybook/addon-onboarding@^10.2.17
+- vite@^8.0.0
+- eslint-plugin-storybook@^10.2.17
+- vitest
+- playwright
+- @vitest/browser-playwright
+- @vitest/coverage-v8
+[19:20:45.861] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:45.861] [DEBUG] Using cached version for storybook...
+[19:20:45.861] [DEBUG] Using cached version for @storybook/nextjs-vite...
+[19:20:45.861] [DEBUG] Using cached version for @chromatic-com/storybook...
+[19:20:45.861] [DEBUG] Using cached version for @storybook/addon-vitest...
+[19:20:45.861] [DEBUG] Using cached version for @storybook/addon-a11y...
+[19:20:45.861] [DEBUG] Using cached version for @storybook/addon-docs...
+[19:20:45.861] [DEBUG] Using cached version for @storybook/addon-onboarding...
+[19:20:45.861] [DEBUG] Using cached version for vite...
+[19:20:45.861] [DEBUG] Using cached version for eslint-plugin-storybook...
+[19:20:45.861] [DEBUG] Getting CLI versions from NPM for vitest...
+[19:20:45.861] [DEBUG] Executing command: npm info vitest version
+[19:20:46.700] [DEBUG] Getting CLI versions from NPM for playwright...
+[19:20:46.700] [DEBUG] Executing command: npm info playwright version
+[19:20:48.917] [DEBUG] Getting CLI versions from NPM for @vitest/browser-playwright...
+[19:20:48.917] [DEBUG] Executing command: npm info @vitest/browser-playwright version
+[19:20:50.199] [DEBUG] Getting CLI versions from NPM for @vitest/coverage-v8...
+[19:20:50.199] [DEBUG] Executing command: npm info @vitest/coverage-v8 version
+[19:20:51.300] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:20:51.301] [INFO] adding-dependencies-task-success: Dependencies added to package.json
+[19:20:51.302] [INFO] Installing dependencies...
+[19:20:51.302] [INFO] install-dependencies-spinner-start: Installing dependencies...
+[19:20:51.303] [DEBUG] Executing command: npm install
+[19:21:02.552] [ERROR] Installation of dependencies failed! {"error":"ExecaError: Command failed with exit code 1: npm.cmd install\n\nnpm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: employee-management@0.1.0\nnpm error Found: vite@8.0.0\nnpm error node_modules/vite\nnpm error   dev vite@\"^8.0.0\" from the root project\nnpm error   peer vite@\"*\" from @vitejs/devtools@0.0.0-alpha.34\nnpm error   node_modules/@vitejs/devtools\nnpm error     peerOptional @vitejs/devtools@\"^0.0.0-alpha.31\" from vite@8.0.0\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer vite@\"^5.0.0 || ^6.0.0 || ^7.0.0\" from @storybook/nextjs-vite@10.2.17\nnpm error node_modules/@storybook/nextjs-vite\nnpm error   dev @storybook/nextjs-vite@\"^10.2.17\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error C:\\Users\\sargs\\AppData\\Local\\npm-cache\\_logs\\2026-03-12T15_20_51_432Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: C:\\Users\\sargs\\AppData\\Local\\npm-cache\\_logs\\2026-03-12T15_20_51_432Z-debug-0.log\n    at getFinalError (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:13109:10)\n    at makeError (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:14645:15)\n    at getAsyncResult (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:17291:158)\n    at handlePromise (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:17277:162)\n    at async Object.executeTaskWithSpinner (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-ZMMRXEMN.js:3683:11)\n    at async NPMProxy.installDependencies (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-LZBZZS4H.js:11258:5)\n    at async DependencyInstallationCommand.execute (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/create-storybook/dist/_node-chunks/chunk-OKM4BMV6.js:2072:9)\n    at async doInitiate (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/create-storybook/dist/_node-chunks/chunk-OKM4BMV6.js:2848:38)\n    at async file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/create-storybook/dist/_node-chunks/chunk-OKM4BMV6.js:2882:20\n    at async withTelemetry (file:///C:/Users/sargs/AppData/Local/npm-cache/_npx/b7be834efe44dce2/node_modules/storybook/dist/_node-chunks/chunk-FTTIUZEI.js:218:12)"}
+[19:21:02.552] [ERROR] install-dependencies-spinner-error: [31mInstallation of dependencies failed![39m
+[19:21:02.574] [INFO] configure-addons-task-start: Configuring addons...
+[19:21:02.574] [INFO] configure-addons-task: Configuring @chromatic-com/storybook...
+[19:21:02.575] [INFO] configure-addons-task: @chromatic-com/storybook configured
+
+[19:21:02.576] [INFO] configure-addons-task: Configuring @storybook/addon-vitest...
+[19:21:02.577] [DEBUG] Getting package.json info for C:/Users/sargs/Videos/employee-management/package.json...
+[19:21:02.577] [DEBUG] Using cached package.json for C:\Users\sargs\Videos\employee-management\package.json...
+[19:21:02.577] [DEBUG] Using cached installed version for vitest...
+[19:21:02.577] [DEBUG] Vitest version specifier: 4.1.0
+[19:21:02.751] [DEBUG] Using cached installed version for vitest...
+[19:21:02.751] [DEBUG] Using cached installed version for msw...
+[19:21:02.751] [INFO] Creating a Vitest setup file for Storybook:
+[19:21:02.752] [INFO] C:/Users/sargs/Videos/employee-management/.storybook/vitest.setup.ts
+
+[19:21:02.773] [INFO] Creating a Vitest config file:
+[19:21:02.773] [INFO] C:/Users/sargs/Videos/employee-management/vitest.config.ts
+[19:21:02.780] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[19:21:02.780] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[19:21:02.780] [DEBUG] Executing command: npx storybook@10.2.17 automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager npm --skip-install
+[19:21:37.743] [INFO] a11y addon setup successfully
+[19:21:37.743] [INFO] [32ma11y addon setup successfully[39m
+[19:21:37.744] [INFO] [32m@storybook/addon-vitest setup completed successfully[39m
+[19:21:37.744] [INFO] @storybook/addon-vitest is now configured and you're ready to run your tests!
+Here are a couple of tips to get you started:
+
+• You can run tests with "[36mnpx vitest[39m"
+• Vitest IDE extension shows all stories as tests in your editor!
+
+Check the documentation for more information about its features and options at:
+https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
+[19:21:37.745] [INFO] configure-addons-task: @storybook/addon-vitest configured
+
+[19:21:37.746] [INFO] configure-addons-task: Configuring @storybook/addon-a11y...
+[19:21:37.747] [DEBUG] Executing command: npx storybook@10.2.17 automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager npm --config-dir .storybook
+[19:21:42.019] [INFO] configure-addons-task: @storybook/addon-a11y configured
+
+[19:21:42.020] [INFO] configure-addons-task: Configuring @storybook/addon-docs...
+[19:21:42.022] [INFO] configure-addons-task: @storybook/addon-docs configured
+
+[19:21:42.023] [INFO] configure-addons-task: Configuring @storybook/addon-onboarding...
+[19:21:42.025] [INFO] configure-addons-task: @storybook/addon-onboarding configured
+
+[19:21:42.026] [INFO] configure-addons-task-success: Addons configured successfully
+[19:21:42.026] [INFO] [2m✅ @chromatic-com/storybook[22m
+[19:21:42.027] [INFO] [2m✅ @storybook/addon-vitest[22m
+[19:21:42.027] [INFO] [2m✅ @storybook/addon-a11y[22m
+[19:21:42.027] [INFO] [2m✅ @storybook/addon-docs[22m
+[19:21:42.027] [INFO] [2m✅ @storybook/addon-onboarding[22m
+[19:21:42.027] [INFO] Playwright browser binaries are necessary for @storybook/addon-vitest. The download can take some time. If you don't want to wait, you can skip the installation and run the following command manually later:
+[36mnpx playwright install chromium --with-deps[39m
+[19:21:57.679] [PROMPT] Do you want to install Playwright with Chromium now? {"choice":true}
+[19:21:57.679] [INFO] Installing Playwright browser binaries (press "c" to abort)
+[19:21:57.680] [INFO] playwright-installation-spinner-start: Installing Playwright browser binaries (press "c" to abort)
+[19:21:57.680] [DEBUG] Executing command: npx playwright install chromium --with-deps
+[19:22:15.863] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208)[2m from https://cdn.playwright.dev/builds/cft/145.0.7632.6/win64/chrome-win64.zip[22m
+
+[19:22:15.863] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading Chrome for Te
+[19:22:17.198] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   0% of 172.8 MiB
+
+[19:22:17.198] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[19:22:27.676] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 172.8 MiB
+
+[19:22:27.676] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[19:22:41.797] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 172.8 MiB
+
+[19:22:41.797] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[19:23:00.492] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 172.8 MiB
+
+[19:23:00.492] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:23:10.781] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 172.8 MiB
+
+[19:23:10.781] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:23:20.552] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 172.8 MiB
+
+[19:23:20.552] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:23:36.371] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 172.8 MiB
+
+[19:23:36.371] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:23:53.344] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 172.8 MiB
+
+[19:23:53.344] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:04.722] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 172.8 MiB
+
+[19:24:04.722] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:19.175] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 172.8 MiB
+
+[19:24:19.176] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:43.374] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 172.8 MiB
+
+[19:24:43.374] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:47.336] [INFO] Installing Playwright browser binaries (press "c" to abort): Chrome for Testing 145.0.7632.6 (playwright chromium v1208) downloaded to C:\Users\sargs\AppData\Local\ms-playwright\chromium-1208
+
+[19:24:47.336] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Chrome for Testing 145.0.
+[19:24:47.337] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading FFmpeg (playwright ffmpeg v1011)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-win64.zip[22m
+
+[19:24:47.337] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading FFmpeg (playw
+[19:24:49.575] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   1% of 1.3 MiB
+
+[19:24:49.575] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[19:24:50.010] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 1.3 MiB
+
+[19:24:50.010] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[19:24:50.319] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 1.3 MiB
+
+[19:24:50.319] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[19:24:50.561] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 1.3 MiB
+
+[19:24:50.561] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:50.819] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 1.3 MiB
+
+[19:24:50.819] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:51.062] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 1.3 MiB
+
+[19:24:51.062] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:51.397] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  61% of 1.3 MiB
+
+[19:24:51.397] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:51.728] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 1.3 MiB
+
+[19:24:51.728] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:52.355] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 1.3 MiB
+
+[19:24:52.355] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:53.129] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 1.3 MiB
+
+[19:24:53.129] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:55.469] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 1.3 MiB
+
+[19:24:55.469] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:24:55.564] [INFO] Installing Playwright browser binaries (press "c" to abort): FFmpeg (playwright ffmpeg v1011) downloaded to C:\Users\sargs\AppData\Local\ms-playwright\ffmpeg-1011
+
+[19:24:55.564] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): FFmpeg (playwright ffmpeg
+[19:24:55.565] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208)[2m from https://cdn.playwright.dev/builds/cft/145.0.7632.6/win64/chrome-headless-shell-win64.zip[22m
+
+[19:24:55.565] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading Chrome Headle
+[19:24:56.897] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   0% of 108.8 MiB
+
+[19:24:56.897] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[19:25:01.630] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 108.8 MiB
+
+[19:25:01.630] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[19:25:11.087] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 108.8 MiB
+
+[19:25:11.087] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[19:25:20.429] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 108.8 MiB
+
+[19:25:20.429] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:26.266] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 108.8 MiB
+
+[19:25:26.266] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:31.952] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 108.8 MiB
+
+[19:25:31.952] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:37.948] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 108.8 MiB
+
+[19:25:37.948] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:44.722] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 108.8 MiB
+
+[19:25:44.722] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:52.231] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 108.8 MiB
+
+[19:25:52.231] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:25:58.934] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 108.8 MiB
+
+[19:25:58.934] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:09.792] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 108.8 MiB
+
+[19:26:09.792] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:12.795] [INFO] Installing Playwright browser binaries (press "c" to abort): Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) downloaded to C:\Users\sargs\AppData\Local\ms-playwright\chromium_headless_shell-1208
+
+[19:26:12.795] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Chrome Headless Shell 145
+[19:26:12.797] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading Winldd (playwright winldd v1007)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip[22m
+
+[19:26:12.797] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading Winldd (playw
+[19:26:14.583] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   1% of 0.1 MiB
+
+[19:26:14.583] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[19:26:14.655] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 0.1 MiB
+
+[19:26:14.655] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[19:26:14.726] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  24% of 0.1 MiB
+
+[19:26:14.726] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[19:26:14.785] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  37% of 0.1 MiB
+
+[19:26:14.785] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.827] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  49% of 0.1 MiB
+
+[19:26:14.827] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.838] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  62% of 0.1 MiB
+
+[19:26:14.838] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.843] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  75% of 0.1 MiB
+
+[19:26:14.843] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.858] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  88% of 0.1 MiB
+
+[19:26:14.858] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.916] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0.1 MiB
+
+[19:26:14.916] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[19:26:14.957] [INFO] Installing Playwright browser binaries (press "c" to abort): Winldd (playwright winldd v1007) downloaded to C:\Users\sargs\AppData\Local\ms-playwright\winldd-1007
+
+[19:26:14.957] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Winldd (playwright winldd
+[19:26:14.999] [INFO] Playwright browser binaries installed successfully
+[19:26:14.999] [INFO] playwright-installation-spinner-stop: Playwright browser binaries installed successfully
+[19:26:15.974] [WARN] Storybook setup completed, but some non-blocking errors occurred. Please check the log file below for details.
+[19:26:15.976] [INFO] To run Storybook manually, run [36mnpm run storybook[39m. CTRL+C to stop.
+[19:26:15.978] [INFO] Wanna know more about Storybook? Check out [36mhttps://storybook.js.org/[39m
+Having trouble or want to chat? Join us at [36mhttps://discord.gg/storybook/[39m
