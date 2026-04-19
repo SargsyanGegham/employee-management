@@ -1,0 +1,13 @@
+{
+  "name": "code-style",
+  "version": "1.0.0",
+  "description": "Frontend code style and best practices guidelines",
+  "type": "guidelines",
+  "created": "2026-04-19",
+  "author": "GitHub Copilot",
+  "tags": ["typescript", "react", "coding-standards", "best-practices"],
+  "applicableTo": ["frontend", "components", "services", "utilities"],
+  "priority": "high",
+  "reviewCycle": "monthly",
+  "snapshot": "code-style.snapshot.tsx"
+}

@@ -6,7 +6,13 @@
     "dev": "concurrently \"next dev\" \"json-server --watch db.json --port 4000\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prompts:setup": "setup-prompts.bat",
+    "prompts:list": "ls -la src/prompts/",
+    "prompts:open": "code src/prompts/",
+    "prompts:validate": "echo 'Validating prompts...' && ls src/prompts/*.prompt.md | wc -l && echo 'prompt files found'",
+    "prompts:new": "echo 'To create new prompt: cp src/prompts/code-style.prompt.md src/prompts/new-prompt.prompt.md'",
+    "code:style": "echo 'Code style guidelines:' && cat src/prompts/code-style.prompt.md"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",

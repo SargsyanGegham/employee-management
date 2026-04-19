@@ -1,0 +1,19 @@
+{
+  // Recommended extensions for the team
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-json",
+    "christian-kohler.path-intellisense"
+  ],
+
+  // Project-specific settings
+  "js/ts.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // Note: Custom prompts are available in src/prompts/
+  // Run setup-prompts.bat to integrate with VS Code user prompts
+  // Claude Code will automatically read .claude.md for project guidelines
+}
